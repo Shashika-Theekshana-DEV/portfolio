@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashika Theekshana - Native iOS Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+        .skill-tag {
+            transition: all 0.2s ease;
+        }
+        .skill-tag:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">ST</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-600" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block text-gray-600 hover:text-blue-600 py-2">Home</a>
+                <a href="#projects" class="block text-gray-600 hover:text-blue-600 py-2">Projects</a>
+                <a href="#skills" class="block text-gray-600 hover:text-blue-600 py-2">Skills</a>
+                <a href="#about" class="block text-gray-600 hover:text-blue-600 py-2">About</a>
+                <a href="#contact" class="block text-gray-600 hover:text-blue-600 py-2">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20 lg:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl lg:text-7xl font-bold mb-6 opacity-0 animate-fade-in">
+                    Shashika Theekshana
+                </h1>
+                <h2 class="text-2xl lg:text-3xl font-light mb-6 opacity-0 animate-fade-in" style="animation-delay: 0.2s;">
+                    Native iOS Developer
+                </h2>
+                <p class="text-xl lg:text-2xl mb-8 opacity-0 animate-fade-in" style="animation-delay: 0.4s;">
+                    Crafting elegant, user-focused iOS applications with Swift and SwiftUI
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in" style="animation-delay: 0.6s;">
+                    <a href="#projects" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    A selection of iOS applications I've built, focusing on clean design and exceptional user experience.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- MonoTask Project -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-gray-100">
+                    <div class="h-48 gradient-bg flex items-center justify-center">
+                        <i class="fas fa-tasks text-6xl text-white opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">MonoTask</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            A minimalist productivity app that helps users focus on one task at a time. Built with SwiftUI and Core Data for seamless task management.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">SwiftUI</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Core Data</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">MVVM</span>
+                        </div>
+                        <a href="https://github.com/shashika/monotask" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors">
+                            <i class="fab fa-github mr-2"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Additional Project Placeholder -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-gray-100">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-6xl text-white opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">iOS Weather App</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            A beautiful weather application featuring custom animations, location services, and real-time data updates using modern iOS frameworks.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">SwiftUI</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Combine</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">URLSession</span>
+                        </div>
+                        <a href="https://github.com/shashika/weather-app" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors">
+                            <i class="fab fa-github mr-2"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Third Project Placeholder -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-gray-100">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-6xl text-white opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Expense Tracker</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            A personal finance app with intuitive charts and insights. Features SwiftData for modern data persistence and beautiful SwiftUI charts.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">SwiftData</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">SwiftUI</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Charts</span>
+                        </div>
+                        <a href="https://github.com/shashika/expense-tracker" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors">
+                            <i class="fab fa-github mr-2"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    The technologies and frameworks I use to build robust, scalable iOS applications.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center skill-tag">
+                        <i class="fab fa-swift text-4xl text-orange-500 mb-3"></i>
+                        <h3 class="font-semibold text-gray-800">Swift</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center skill-tag">
+                        <i class="fas fa-code text-4xl text-blue-500 mb-3"></i>
+                        <h3 class="font-semibold text-gray-800">SwiftUI</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center skill-tag">
+                        <i class="fas fa-link text-4xl text-purple-500 mb-3"></i>
+                        <h3 class="font-semibold text-gray-800">Combine</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center skill-tag">
+                        <i class="fas fa-database text-4xl text-green-500 mb-3"></i>
+                        <h3 class="font-semibold text-gray-800">SwiftData</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center skill-tag">
+                        <i class="fas fa-layer-group text-4xl text-indigo-500 mb-3"></i>
+                        <h3 class="font-semibold text-gray-800">MVVM</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center skill-tag">
+                        <i class="fas fa-server text-4xl text-red-500 mb-3"></i>
+                        <h3 class="font-semibold text-gray-800">Core Data</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center skill-tag">
+                        <i class="fas fa-globe text-4xl text-teal-500 mb-3"></i>
+                        <h3 class="font-semibold text-gray-800">URLSession</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center skill-tag">
+                        <i class="fab fa-git-alt text-4xl text-orange-600 mb-3"></i>
+                        <h3 class="font-semibold text-gray-800">Git</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">About Me</h2>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            I'm a passionate iOS developer who believes in the power of simplicity and focus. My approach to app development centers on creating clean, intuitive experiences that solve real problems for users.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            With expertise in Swift and SwiftUI, I specialize in building native iOS applications that are not only functional but also delightful to use. I'm particularly drawn to projects that emphasize minimalism and user-centered design.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Whether it's implementing complex data flows with Combine, architecting clean MVVM patterns, or integrating the latest iOS frameworks, I'm committed to writing maintainable code that stands the test of time.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">iOS Development</span>
+                            <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Clean Architecture</span>
+                            <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">User Experience</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-64 h-64 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl">
+                            <i class="fas fa-user-tie text-8xl text-white opacity-80"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">Let's Connect</h2>
+                <p class="text-xl text-gray-600 mb-12">
+                    Interested in collaborating or have a project in mind? I'd love to hear from you.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <a href="mailto:shashika@example.com" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all card-hover">
+                        <i class="fas fa-envelope text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Email</h3>
+                        <p class="text-gray-600">shashika@example.com</p>
+                    </a>
+                    <a href="https://github.com/shashika" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all card-hover">
+                        <i class="fab fa-github text-4xl text-gray-800 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">GitHub</h3>
+                        <p class="text-gray-600">@shashika</p>
+                    </a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Available for New Projects</h3>
+                    <p class="text-gray-600 mb-6">
+                        I'm currently accepting new iOS development projects and collaborations. Let's build something amazing together!
+                    </p>
+                    <a href="mailto:shashika@example.com" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Send Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">
+                © 2025 Shashika Theekshana. Built with HTML, Tailwind CSS, and passion for clean code.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('mobileMenu').classList.add('hidden');
+            });
+        });
+
+        // Add fade-in animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(30px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in {
+                animation: fadeIn 0.8s ease-out forwards;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add scroll-based animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for scroll animations
+        document.querySelectorAll('.card-hover, .skill-tag').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
